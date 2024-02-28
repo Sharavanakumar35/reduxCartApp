@@ -29,7 +29,7 @@ const Navbar = () => {
             <DropdownNavItem />
           </ul>
           <div className='me-5'><strong>Total Price: </strong>${totalPrice}</div>
-          <CartButton cartValue={totalItems} />
+          <CartButton cartValue={totalItems}/>
         </div>
       </div>
     </nav>
@@ -59,9 +59,13 @@ const DropdownNavItem = () => {
 };
 
 const CartButton = ({ cartValue }) => {
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default behavior
+  };
+
   return (
     <form className="d-flex">
-      <button className="btn btn-outline-dark" type="submit">
+      <button className="btn btn-outline-dark" onClick={handleClick}>
         <CartFill />
         <span className='ms-2'>Cart</span>
         <span className="badge bg-dark text-white ms-2 rounded-pill">{cartValue}</span>
