@@ -134,6 +134,10 @@ img {
   display: flex;
   align-items: baseline;
 }
+.star-rating {
+  display: flex;
+  align-items: end;
+}
 
 #quantity {
    .btn-list {

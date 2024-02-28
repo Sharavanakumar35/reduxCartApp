@@ -103,6 +103,7 @@ const handleUpdateCartItem = (action) => {
               </div>
             <div className="star-rating  mb-2" style={{marginLeft: '-5px'}}>
               <Rating initialValue={product.rating} allowFraction readonly />
+              <span className='ms-2'>{`(${product.rating})`}</span>
             </div>
             <div className="card-description  my-2">{product.description}</div>
             <div className='d-flex justify-content-between align-items-center'>
