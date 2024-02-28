@@ -1,0 +1,21 @@
+.card {
+  flex-direction: row !important;
+  align-items: center;
+}
+.card-title {
+  font-weight: bold;
+  font-size: xx-large;
+}
+/* .card img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  margin: 10px
+} */
+
+.headerImage {
+  background-image: url(https://png.pngtree.com/background/20230608/original/pngtree-display-of-different-high-end-phones-picture-image_2904219.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
